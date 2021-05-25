@@ -31,8 +31,8 @@ public struct GalleryAlbum: Codable {
     public var favorite: Bool    // Indicates if the current user favorited the album. Defaults to false if not signed in.
     public var nsfw: Bool    // Indicates if the album has been marked as nsfw or not. Defaults to null if information is not available.
     public var commentCount: Int    // Number of comments on the gallery album.
-    public var topic: String    // Topic of the gallery album.
-    public var topicId: Int   // Topic ID of the gallery album.
+    public var topic: String?    // Topic of the gallery album.
+    public var topicId: Int?   // Topic ID of the gallery album.
     public var imagesCount: Int?    // The total number of images in the album
     public var inMostViral: Bool   // Indicates if the album is in the most viral gallery or not.
     public var images: [AlbumImages]?    // An array of all the images in the album (only available when requesting the direct album)
